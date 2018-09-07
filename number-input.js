@@ -5,7 +5,7 @@ function addFigure(numVal) {
   numVal = toHalfWidth(numVal).replace(/,/g, "").trim();
   // 数値でなければそのまま返却
   if ( !/^[+|-]?(\d*)(\.\d+)?$/.test(numVal) ){
-      return numVal;
+      return numVal
 　　}
   // 整数部分と小数部分に分割
   var numData = numVal.toString().split('.');
