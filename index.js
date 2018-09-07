@@ -87,9 +87,9 @@ function setGeneralLossFomula(npoIsCertificated, capital, income, loss){
   var loss_str = number2text(loss);
 
   if (capital==0){
-    text = income_str + '×1.25% = ' + loss_str;
+    text = income_str + '円×1.25% = ' + loss_str + '円';
   }else{
-    text = '(' + capital_str + '×0.25%＋' + income_str + '×2.5%)×1/4 = ' + loss_str;
+    text = '(' + capital_str + '円×0.25%＋' + income_str + '円×2.5%)×1/4 = ' + loss_str + '円';
   }
   generalLossFomulaSpace.innerHTML = text;
 }
@@ -107,9 +107,9 @@ function setCertificatedLossFomula(npoIsCertificated, capital, income, loss){
   }
 
   if (capital==0){
-    text = income_str + '×6.25% = ' + loss_str;
+    text = income_str + '円×6.25% = ' + loss_str + '円';
   }else{
-    text = '(' + capital_str + '×0.375%＋' + income_str + '×6.25%)×1/2 = ' + loss_str;
+    text = '(' + capital_str + '円×0.375%＋' + income_str + '円×6.25%)×1/2 = ' + loss_str + '円';
   }
   certificatedLossFomulaSpace.innerHTML = text;
 }
