@@ -115,5 +115,5 @@ function setCertificatedLossFomula(npoIsCertificated, capital, income, loss){
 }
 
 function setResult(result){
-  resultSpace.innerHTML = addFigure(result.toString());
+  resultSpace.innerHTML = addFigure(Math.floor(result).toString());
 }
