@@ -77,9 +77,10 @@ body {
 .result-box {
   position: relative;
   text-align: center;
-  height: 50px;
+  height: 70px;
   color: #4B4B4B;
   font-size: 20px;
+  padding-bottom: 26px;
 }
 
 #result {
@@ -255,3 +256,20 @@ input[type=radio]:checked + label::after {
   color: var(--accent-color);
   height: 20px;
 }
+
+/* footer */
+#footer {
+  position: absolute;
+  /* bottom: 0px; */
+  left: 0px;
+  padding: 10px 0 16px;
+  text-align: center;
+  width: 100vw;
+  /* height: 50px; */
+  background-color: #B4B2B2;
+}
+
+#footer a:link { color: #fff; }
+#footer a:visited { color: #fff; }
+#footer a:hover { color: #fff; }
+#footer a:active { color: #fff; }
