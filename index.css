@@ -1,0 +1,256 @@
+:root {
+  --basic-color: #4B4B4B;
+  --accent-color: #FD5151;
+}
+
+.header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content:         center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  height: 56px;
+  background-color: #767676;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.header h1{
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.description {
+  padding: 5px 20px 5px;
+  background-color: #FF9696;
+  color: #fff;
+}
+
+h2 {
+  color: #4B4B4B;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body {
+  color: #4B4B4B;
+  font-size: 14px;
+  background-color: #D5D5D5;
+  margin-top: 56px;
+}
+
+.dammy-background-container {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.dammy-background {
+  min-height: 100vh;
+}
+
+.dammy-col {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.question {
+  margin-top: 16px;
+  padding-bottom: 18px;
+}
+
+.main-container {
+}
+
+.main-col {
+  background-color: #fff;
+}
+
+.result-box {
+  position: relative;
+  text-align: center;
+  height: 50px;
+  color: #4B4B4B;
+  font-size: 20px;
+}
+
+#result {
+  color: var(--accent-color);
+  font-size: 30px;
+  height: 30px;
+  font-weight: bold;
+}
+
+
+/* textbox */
+.text-field-container {
+  position: relative;
+  margin-top: 1.5rem;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.text-field-container input {
+  color: var(--basic-color);
+  font-size: 20px;
+  font-weight: bold;
+  text-align:right;
+  /* padding-bottom: 0.2rem; */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--basic-color);
+  transition: 256ms;
+  width: 200px
+}
+.text-field-container input.focused {
+  border-bottom: 2px solid var(--accent-color);
+  /* color: var(--accent-color); */
+}
+
+.text-field-container label {
+  color: var(--basic-color);
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: #888;
+  pointer-events: none;
+  transition: 256ms;
+}
+
+.text-field-container input.focused + label {
+  color: blue;
+  top: -1rem;
+  font-size: 0.6rem;
+}
+
+.text-field-container input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.text-field-container input:-moz-placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.text-field-container input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.text-field-container input:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-field-container .currency {
+  color: var(--basic-color);
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+/* radiobox */
+.radiobox-container {
+  margin: 8px auto 16px;
+  width: 275px;
+  height: 50px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input[type=radio] {
+    display: none;
+}
+input[type=radio] + label {
+    position: relative;
+    padding-left: 32px;
+    padding-top: 3px;
+    width: 275px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type=radio]:checked + label {
+  color: var(--accent-color);
+}
+
+input[type=radio] + label::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #4B4B4B;
+    border-radius: 50%;
+    transition: .2s;
+}
+input[type=radio]:checked + label::before {
+    border: 2px solid var(--accent-color);
+}
+input[type=radio] + label::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 11px;
+    left: 9px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: .175s;
+}
+input[type=radio]:checked + label::after {
+    transform: scale(1);
+}
+
+/* calc-box */
+
+.fomula-description {
+  text-align: left;
+}
+
+#calc-box {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  padding: 8px;
+  padding-bottom: 0px;
+  border: 2px dotted var(--basic-color);
+}
+
+#calc-box label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#calc-box li {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+#calc-box .fomula-container {
+  width: 100%;
+  text-align: right;
+  color: var(--accent-color);
+  height: 20px;
+}
