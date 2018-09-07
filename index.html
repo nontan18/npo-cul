@@ -3,7 +3,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="NPO法人,寄付,損金算入上限">
-  <title>NPOらくらく損金算出機</title>
+  <meta name="description" content="法人からNPO法人へ寄付を行った場合の損金算入上限額の目安を求めるWebアプリです。">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="NPOらくらく損金上限算出機">
+  <title>NPOらくらく損金上限算出機</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -13,9 +16,9 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  <div class="header"><h1>NPOらくらく損金算出機</h1></div>
+  <div class="header"><h1>NPOらくらく損金上限算出機</h1></div>
   <!-- <div id="background-dammy"><div id="background-dammy-content"></div></div> -->
-  <div class="description">「NPOらくらく損金算出機」は法人がNPO法人に寄付をした場合に損金算入できる金額の上限を計算するアプリです。
+  <div class="description">「NPOらくらく損金上限算出機」は法人がNPO法人に寄付をした場合に損金算入できる金額の上限を計算するアプリです。
 (※あくまでめやすとしてお使いください。)</div>
 
   <div class="dammy-background-container">
@@ -47,7 +50,7 @@
 
         <div class="question">
           <h2>Q3.寄付先のNPO法人は認定NPO法人(もしくは特例認定NPO法人)ですか？</h2>
-          <p>認定NPO法人とはNPO法人の中でも特に公益性が高く活動の適性が都道府県庁より認められたNPO法人です。寄付先が認定NPO法人の場合、通常のNPO法人に比べて大幅に損金算入額の上限が上がります。</p>
+          <p>認定NPO法人とはNPO法人の中でも特に公益性が高く活動の適性が都道府県庁より認められたNPO法人です。寄付先が認定NPO法人の場合、通常のNPO法人に比べて損金算入額の上限が大幅に上がります。</p>
         </div>
 
         <div class="radiobox-container">
@@ -86,7 +89,11 @@
 
         <div class="result-box"><span class="result-content">損金算入上限額は<span id="result">0</span>円です</span></div>
 
+        <div style="margin: 10px auto 16px; text-align:center">
+          <span>参考元:<a href="https://www.npo-homepage.go.jp/kifu/kifu-yuuguu/houjin-kifu">法人が認定・特例認定NPO法人に寄附した場合 | NPOホームページ</a></span>
+        </div>
       </div>
+
     </div>
   </div>
 
